@@ -1,2 +1,5 @@
-^tfcapi\.Rproj$
+^renv$
+^renv\.lock$
+^tfdown\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
