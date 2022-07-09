@@ -3,3 +3,7 @@
 fun <- function() {
   invisible(.Call(`_tfdown_fun`))
 }
+
+version <- function() {
+  .Call(`_tfdown_version`)
+}

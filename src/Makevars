@@ -1,0 +1,4 @@
+CXX_STD=CXX11
+
+PKG_CPPFLAGS=-I../tf/include
+PKG_LIBS=-L../tf/lib -ltensorflow

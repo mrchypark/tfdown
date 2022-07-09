@@ -13,10 +13,18 @@ extern "C" SEXP _tfdown_fun() {
     return R_NilValue;
   END_CPP11
 }
+// code.cpp
+int version();
+extern "C" SEXP _tfdown_version() {
+  BEGIN_CPP11
+    return cpp11::as_sexp(version());
+  END_CPP11
+}
 
 extern "C" {
 static const R_CallMethodDef CallEntries[] = {
-    {"_tfdown_fun", (DL_FUNC) &_tfdown_fun, 0},
+    {"_tfdown_fun",     (DL_FUNC) &_tfdown_fun,     0},
+    {"_tfdown_version", (DL_FUNC) &_tfdown_version, 0},
     {NULL, NULL, 0}
 };
 }

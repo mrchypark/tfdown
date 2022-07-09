@@ -20,3 +20,5 @@ SystemRequirements: C++11
 Suggests: 
     covr,
     usethis
+Imports: 
+    semver
